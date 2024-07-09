@@ -1,14 +1,18 @@
 const Skills = () => {
     return (
-        <ul>
-            <li>Javascript</li>
-            <li>React</li>
-            <li>Node</li>
-            <li>Python</li>
-            <li>Playwright</li>
-            <li>CSS</li>
-            <li>HTML</li>
-        </ul>
+        <>
+            <h2>Skills</h2>
+            <ul>
+                <li>Javascript</li>
+                <li>React</li>
+                <li>Node</li>
+                <li>Python</li>
+                <li>Playwright</li>
+                <li>Cypress</li>
+                <li>CSS</li>
+                <li>HTML</li>
+            </ul>
+        </>
     )
 }
 
