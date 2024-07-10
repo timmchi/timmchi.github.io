@@ -1,16 +1,12 @@
+import { skills } from "../../data/skills"
+import SkillCard from "./SkillCard"
+
 const Skills = () => {
     return (
         <>
-            <h2>Skills</h2>
+            <h2 className="text-2xl font-bold">Skills</h2>
             <ul>
-                <li>Javascript</li>
-                <li>React</li>
-                <li>Node</li>
-                <li>Python</li>
-                <li>Playwright</li>
-                <li>Cypress</li>
-                <li>CSS</li>
-                <li>HTML</li>
+                {skills.map(skill => <SkillCard key={skill.id} skill={skill} />)}
             </ul>
         </>
     )

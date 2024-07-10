@@ -15,7 +15,7 @@ function App() {
         <Route path="/about" element={<About />} />
       </Routes>
 
-      <div className='bg-slate-400'>
+      <div className='bg-stone-300'>
         <Hero />
         <Skills />
         <Projects />
