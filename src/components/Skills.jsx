@@ -5,7 +5,7 @@ const Skills = () => {
     return (
         <>
             <h2 className="text-2xl font-bold">Skills</h2>
-            <ul>
+            <ul className="flex flex-wrap flex-col justify-center items-center lg:flex-row">
                 {skills.map(skill => <SkillCard key={skill.id} skill={skill} />)}
             </ul>
         </>
