@@ -12,7 +12,7 @@ const ProjectCard = ({ project }) => {
                 <p className="text-lg p-2">{project.description}</p>
                 <p className="p-2"><a href={project.link}>{project.name} link</a></p>
                 <a href={project.github} className="flex items-center justify-center" target="_blank"> Repository
-                    <span class="[&>svg]:h-8 [&>svg]:w-8 pl-2">
+                    <span className="[&>svg]:h-8 [&>svg]:w-8 pl-2">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="currentColor"
