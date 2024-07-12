@@ -6,7 +6,7 @@ const ProjectCard = ({ project }) => {
     const navigate = useNavigate()
 
     return (
-        <div className={`${project.id % 2 !== 0 && 'flex-row-reverse'} flex m-6 border-2 rounded-lg border-indigo-900 bg-stone-200 shadow-2xl max-w-2xl`}>
+        <div className={`${project.id % 2 !== 0 && 'flex-row-reverse'} flex m-6 rounded-lg bg-stone-200 shadow-2xl w-[800px] h-[450px]`}>
             <div className="basis-1/2 text-center p-6">
                 <h3 className="text-2xl font-bold py-5">{project.name}</h3>
                 <p className="text-lg p-2">{project.description}</p>
@@ -27,7 +27,7 @@ const ProjectCard = ({ project }) => {
                     Read more
                 </button>
             </div>
-            <img className="basis-1/2" src={IMAGE_PLACEHOLDER} alt="project image" />
+            <img className="basis-1/2 rounded" src={IMAGE_PLACEHOLDER} alt="project image" />
         </div>
     )
 }

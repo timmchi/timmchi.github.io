@@ -1,7 +1,9 @@
+import Header from "./Header"
+
 const ContactForm = () => {
     return (
         <>
-            <h2>Contact me</h2>
+            <Header text="Contact Me" />
         </>
     )
 }
