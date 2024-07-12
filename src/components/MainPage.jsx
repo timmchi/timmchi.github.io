@@ -1,7 +1,7 @@
 import Hero from "./Hero"
 import Skills from "./Skills"
 import Projects from "./Projects"
-import ContactForm from "./ContactForm"
+import Contact from "./Contact"
 
 const MainPage = () => {
     return (
@@ -9,7 +9,7 @@ const MainPage = () => {
             <Hero />
             <Skills />
             <Projects />
-            <ContactForm /> 
+            <Contact />
         </div>
     )
 }
