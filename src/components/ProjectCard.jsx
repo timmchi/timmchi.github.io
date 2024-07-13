@@ -10,8 +10,13 @@ const ProjectCard = ({ project }) => {
             <div className="basis-2/3 text-center text-teal-900 align-center justify-center self-center">
                 <h3 className="text-4xl font-bold pb-6">{project.name}</h3>
                 <p className="text-2xl">{project.description}</p>
-                <p className="pt-2"><a href={project.link}>{project.name} link</a></p>
-                <a href={project.github} className="flex items-center justify-center" target="_blank"> Repository
+                <a className="flex text-xl justify-center align-center gap-2 pt-2" href={project.link} target="_blank">
+                    Link
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                    </svg>
+                </a>
+                <a href={project.github} className="flex items-center justify-center text-xl" target="_blank"> Repository
                     <span className="[&>svg]:h-8 [&>svg]:w-8 pl-2">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
