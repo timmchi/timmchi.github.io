@@ -3,11 +3,11 @@ import Header from "./Header";
 
 const Contact = () => {
     return (
-        <div>
+        <div className="h-[87vh]">
             <Header text="Contact Me" />
-            <div className="flex gap-4 justify-center mb-8">
-                <p>timurkapusto@gmail.com</p>
-                <p>Telegram</p>
+            <div className="flex justify-center mb-8 font-bold text-lg text-teal-800 divide-x divide-slate-700 pr-8">
+                <p className="pr-2">timurkapusto@gmail.com</p>
+                <p className="pl-2">Telegram</p>
             </div>
             <ContactForm />
         </div>

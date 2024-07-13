@@ -9,8 +9,8 @@ const ProjectCard = ({ project }) => {
         <div className={`flex ${project.id % 2 !== 0 && 'flex-row-reverse'} justify-between border-b-2 border-teal-900 px-12 py-0 w-[190vh] h-[90vh]`}>
             <div className="basis-2/3 text-center text-teal-900 align-center justify-center self-center">
                 <h3 className="text-4xl font-bold pb-6">{project.name}</h3>
-                <p className="text-lg">{project.description}</p>
-                <p className="p-2"><a href={project.link}>{project.name} link</a></p>
+                <p className="text-2xl">{project.description}</p>
+                <p className="pt-2"><a href={project.link}>{project.name} link</a></p>
                 <a href={project.github} className="flex items-center justify-center" target="_blank"> Repository
                     <span className="[&>svg]:h-8 [&>svg]:w-8 pl-2">
                         <svg
