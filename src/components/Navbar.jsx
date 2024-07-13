@@ -8,7 +8,7 @@ const NavBar = () => {
     const [activePage, setActivePage] = useState('Home')
 
     return (
-    <nav className="bg-white dark:bg-teal-800 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+    <nav className="bg-white dark:bg-teal-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="https://avatars.githubusercontent.com/u/121810686?v=4" className="h-8" alt="Timmchi avatar" />
@@ -23,7 +23,7 @@ const NavBar = () => {
                 </button>
             </div>
             <div className={`${open ? 'block' : 'hidden'} w-full md:block md:w-auto`} id="navbar-default">
-                <ul className="font-bold text-lg flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-teal-800 md:flex-row md:space-x-12 rtl:space-x-reverse md:mt-0 md:border-0 md:ml-96 md:pl-96">
+                <ul className="font-bold text-lg flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-teal-900 md:flex-row md:space-x-12 rtl:space-x-reverse md:mt-0 md:border-0 md:ml-96 md:pl-96">
                     <NavLink to="/" title="Home" activePage={activePage} handleActive={() => setActivePage('Home')} />
                     <NavLink to="/about" title="About" activePage={activePage} handleActive={() => setActivePage('About')} />
                     <NavLink to="/projects" title="Projects" activePage={activePage} handleActive={() => setActivePage('Projects')} />

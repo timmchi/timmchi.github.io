@@ -6,10 +6,10 @@ const ProjectCard = ({ project }) => {
     const navigate = useNavigate()
 
     return (
-        <div className={`${project.id % 2 !== 0 && 'flex-row-reverse'} flex m-6 rounded-lg bg-stone-200 shadow-2xl w-[800px] h-[450px]`}>
-            <div className="basis-1/2 text-center p-6">
-                <h3 className="text-2xl font-bold py-5">{project.name}</h3>
-                <p className="text-lg p-2">{project.description}</p>
+        <div className={`flex ${project.id % 2 !== 0 && 'flex-row-reverse'} justify-between border-b-2 border-teal-900 px-12 py-0 w-[190vh] h-[90vh]`}>
+            <div className="basis-2/3 text-center text-teal-900 align-center justify-center self-center">
+                <h3 className="text-4xl font-bold pb-6">{project.name}</h3>
+                <p className="text-lg">{project.description}</p>
                 <p className="p-2"><a href={project.link}>{project.name} link</a></p>
                 <a href={project.github} className="flex items-center justify-center" target="_blank"> Repository
                     <span className="[&>svg]:h-8 [&>svg]:w-8 pl-2">
@@ -23,11 +23,12 @@ const ProjectCard = ({ project }) => {
                         </svg>
                     </span>
                 </a>
-                <button className="p-2 mt-10 text-xl font-bold text-white bg-sky-700 hover:bg-sky-900 rounded-full w-full" onClick={() => navigate(`/projects/${project.id}`)}>
+                <button className="p-2 mt-10 text-xl font-bold text-white bg-teal-700 hover:bg-teal-900 rounded-full w-64" onClick={() => navigate(`/projects/${project.id}`)}>
                     Read more
                 </button>
             </div>
-            <img className="basis-1/2 rounded" src={IMAGE_PLACEHOLDER} alt="project image" />
+            <img className="basis-1/3 rounded flex justify-center align-center border-8 border-white my-12" src={IMAGE_PLACEHOLDER} alt="project image" />
+            
         </div>
     )
 }
