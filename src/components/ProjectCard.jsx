@@ -1,4 +1,5 @@
 import { Link, useNavigate } from "react-router-dom"
+import Carousel from "./Carousel"
 
 const IMAGE_PLACEHOLDER = 'https://pbs.twimg.com/profile_images/1534365794074755073/ClZmdMG8_400x400.jpg'
 
@@ -32,7 +33,9 @@ const ProjectCard = ({ project }) => {
                     Read more
                 </button>
             </div>
-            <img className="basis-1/3 rounded-xl flex justify-center align-center border-8 border-slate-100 my-12 p-12 bg-slate-200 shadow-lg" src={IMAGE_PLACEHOLDER} alt="project image" />
+            <div className="basis-1/3 rounded-xl flex justify-center align-center border-8 border-slate-100 my-12 p-8 bg-slate-200 shadow-lg">
+                <Carousel images={project.images} />
+            </div>
             
         </div>
     )
