@@ -25,7 +25,7 @@ const NavBar = () => {
             <div className={`${open ? 'block' : 'hidden'} w-full md:block md:w-auto`} id="navbar-default">
                 <ul className="font-bold text-lg flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-teal-900 md:flex-row md:space-x-12 rtl:space-x-reverse md:mt-0 md:border-0 md:ml-96 md:pl-96">
                     <NavLink to="/" title="Home" activePage={activePage} handleActive={() => setActivePage('Home')} />
-                    <NavLink to="/about" title="About" activePage={activePage} handleActive={() => setActivePage('About')} />
+                    <NavLink to="/about" title="About me" activePage={activePage} handleActive={() => setActivePage('About me')} />
                     <NavLink to="/projects" title="Projects" activePage={activePage} handleActive={() => setActivePage('Projects')} />
                 </ul>
             </div>

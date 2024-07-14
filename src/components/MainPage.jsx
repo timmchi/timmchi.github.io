@@ -1,6 +1,6 @@
 import Hero from "./Hero"
 import Skills from "./Skills"
-import Projects from "./Projects"
+import ProjectsList from "./ProjectsList"
 import Contact from "./Contact"
 
 const MainPage = () => {
@@ -8,7 +8,7 @@ const MainPage = () => {
         <div className="py-10">
             <Hero />
             <Skills />
-            <Projects />
+            <ProjectsList />
             <Contact />
         </div>
     )

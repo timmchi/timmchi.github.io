@@ -8,6 +8,8 @@ export const projects = [
             { url: 'https://pbs.twimg.com/profile_images/1534365794074755073/ClZmdMG8_400x400.jpg', projectName: 'Kinology' }
         ],
         description: 'Movie app',
+        detailedDescription: 'wip',
+        technologiesUsed: [],
         link: 'https://kinology-movie-app.onrender.com',
         github: 'https://github.com/timmchi/kinology-movie-app'
     }, 
@@ -20,6 +22,8 @@ export const projects = [
             { url: 'https://pbs.twimg.com/profile_images/1534365794074755073/ClZmdMG8_400x400.jpg', projectName: 'Bossanova' }
         ],
         description: 'Radio station and breakfast selection',
+        detailedDescription: 'wip',
+        technologiesUsed: [],
         link: 'https://bossanova-breakfast.onrender.com',
         github: 'https://github.com/timmchi/bossanova-breakfast'
     },
@@ -32,6 +36,8 @@ export const projects = [
             { url: 'https://pbs.twimg.com/profile_images/1534365794074755073/ClZmdMG8_400x400.jpg', projectName: 'Guessr' }
         ],
         description: 'Guess a location based on a google street view',
+        detailedDescription: 'wip',
+        technologiesUsed: [],
         link: 'place guesser link',
         github: 'place guesser repo'
     },
