@@ -8,7 +8,7 @@ import { Routes, Route } from 'react-router-dom'
 function App() {
 
   return (
-    <div className='bg-stone-200 font-heebo'>
+    <div>
       <Routes>
         <Route path="/projects/:projectId" element={<ProjectPage />} />
         <Route path="/about" element={<About />} />
