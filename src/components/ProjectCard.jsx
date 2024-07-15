@@ -12,7 +12,7 @@ const ProjectCard = ({ project }) => {
                 <h3 className="text-2xl py-2 font-bold lg:text-4xl">{project.name}</h3>
                 <p className="text-lg text-center lg:text-2xl">{project.description}</p>
                 <ul className="flex flex-wrap max-w-96 align-center items-center justify-center gap-2 py-4 md:flex-nowrap md:max-w-full">
-                    {project.technologiesUsed.map(tech => <TechCard key={`${project.id}-${tech}`}techName={tech} />)}
+                    {project.technologiesUsed.map(tech => <TechCard key={`${project.id}-${tech}`} techName={tech} />)}
                 </ul>
                 <div className="flex text-md justify-center gap-4 items-center divide-x-2 divide-teal-900 lg:text-xl">
                     <a className="flex justify-center align-center gap-2" href={project.link} target="_blank">
