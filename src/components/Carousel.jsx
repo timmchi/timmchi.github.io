@@ -20,13 +20,13 @@ const Carousel = ({ images }) => {
     const handleGoToIndex = (index) => setCurrentImageIndex(index)
 
     return (
-        <div className="h-[420px] w-[420px] mx-auto py-8 px-4 relative group">
-            <div style={{backgroundImage: `url(${images[currentImageIndex].url})`}} className="h-[400px] rounded-2xl bg-center bg-cover duration-500"></div>
-            <button className="hidden group-hover:block absolute top-[45%] -translate-x-0 -translate-y-[-50%] left-5 p-4 text-lg bg-white bg-opacity-40 hover:bg-opacity-60 rounded-full" onClick={handlePrevClick}><GrPrevious /></button>
-            <button className="hidden group-hover:block absolute top-[45%] -translate-x-0 -translate-y-[-50%] right-5 p-4 text-lg bg-white bg-opacity-40 hover:bg-opacity-60 rounded-full" onClick={handleNextClick}><GrNext /></button>
+        <div className="h-[350px] w-[350px] mx-auto py-8 px-4 relative group lg:h-[420px] lg:w-[420px]">
+            <div style={{backgroundImage: `url(${images[currentImageIndex].url})`}} className="h-[290px] rounded-2xl bg-center bg-cover duration-500 lg:h-[400px]"></div>
+            <button className="hidden group-hover:block absolute top-[45%] -translate-x-0 -translate-y-[-50%] left-5 p-3 text-xs bg-white bg-opacity-40 hover:bg-opacity-60 rounded-full lg:text-lg lg:p-4" onClick={handlePrevClick}><GrPrevious /></button>
+            <button className="hidden group-hover:block absolute top-[45%] -translate-x-0 -translate-y-[-50%] right-5 p-3 text-xs bg-white bg-opacity-40 hover:bg-opacity-60 rounded-full lg:text-lg lg:p-4" onClick={handleNextClick}><GrNext /></button>
             <div className="hidden group-hover:flex top-4 justify-center py-2">
                 {images.map((image, index) => (
-                <button key={`${image.url}${image.projectName}`} className={`${index === currentImageIndex ? 'text-opacity-80' : 'text-opacity-60'} text-slate-400 text-sm p-1 hover:text-opacity-80`} onClick={() => handleGoToIndex(index)}>
+                <button key={`${image.url}${image.projectName}`} className={`${index === currentImageIndex ? 'text-opacity-80' : 'text-opacity-60'} text-slate-400 text-xs p-1 hover:text-opacity-80`} onClick={() => handleGoToIndex(index)}>
                     <FaCircle />
                 </button>
             )
