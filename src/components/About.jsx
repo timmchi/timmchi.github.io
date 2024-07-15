@@ -7,7 +7,7 @@ const About = () => {
     return (
         <div className='pt-12'>
             <div className="flex flex-col justify-center items-center text-teal-900">
-                <div className="text-2xl">
+                <div className="text-2xl mx-auto px-4">
                     <h1 className="font-extrabold text-5xl text-center pt-12 pb-6 tracking-tight leading-none">About me</h1>
                     <p className="w-auto max-w-lg mb-4">My name is Timur Kapusto. I am a fullstack developer based in Finland.</p>
                     <p className="w-auto max-w-lg mb-4">I am most proficient with the MERN stack, but I also know Python. JS and React are what I enjoy using the most.</p>
@@ -15,7 +15,7 @@ const About = () => {
                         so it's only a matter of time before more technologies get added to this list.</p>
                     <p className="w-auto max-w-lg mb-4">I am currently pursuing a Business IT degree at Laurea University of Applied Sciences.</p>
                 </div>
-                <div className="text-2xl">
+                <div className="text-2xl mx-auto px-4">
                     <div>
                         <h2 className="font-extrabold text-center text-4xl pt-8 pb-6 tracking-tight leading-none">My hobbies</h2>
                         <p className="w-auto max-w-lg mb-4">I love reading!

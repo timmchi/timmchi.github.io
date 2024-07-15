@@ -8,7 +8,7 @@ import { Routes, Route } from 'react-router-dom'
 function App() {
 
   return (
-    <div>
+    <div className='w-full max-w-screen'>
       <Routes>
         <Route path="/projects/:projectId" element={<ProjectPage />} />
         <Route path="/about" element={<About />} />

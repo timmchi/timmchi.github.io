@@ -7,7 +7,7 @@ const ProjectCard = ({ project }) => {
     const navigate = useNavigate()
 
     return (
-        <div className={`flex flex-col-reverse justify-between border-b-2 border-teal-900 px-6 w-[full] h-[90vh] lg:w-[190vh] lg:px-12 lg:flex-row ${project.id % 2 !== 0 && 'lg:flex-row-reverse'}`}>
+        <div className={`flex flex-col-reverse justify-between border-b-2 border-teal-900 px-6 w-full max-w-screen h-[90%] lg:w-full lg_max-w-screen-xl lg:px-12 lg:flex-row ${project.id % 2 !== 0 && 'lg:flex-row-reverse'}`}>
             <div className="basis-2/3 text-center text-teal-900 align-center justify-center self-center">
                 <h3 className="text-2xl py-2 font-bold lg:text-4xl">{project.name}</h3>
                 <p className="text-lg text-center lg:text-2xl">{project.description}</p>
@@ -24,7 +24,7 @@ const ProjectCard = ({ project }) => {
                         <FaGithub className="h-8 w-8 pl-2"/>
                     </a>
                 </div>
-                <button className="p-2 mt-4 font-bold text-white text-lg bg-teal-700 hover:bg-teal-900 rounded-full w-48 lg:text-xl lg:w-64 lg:mt-5" onClick={() => navigate(`/projects/${project.id}`)}>
+                <button className="p-2 mt-4 font-bold text-white text-lg mb-4 bg-teal-700 hover:bg-teal-900 rounded-full w-48 lg:text-xl lg:w-64 lg:mt-5" onClick={() => navigate(`/projects/${project.id}`)}>
                     Read more
                 </button>
             </div>
