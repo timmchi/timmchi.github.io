@@ -7,7 +7,7 @@ const ProjectCard = ({ project }) => {
     const navigate = useNavigate()
 
     return (
-        <div className={`flex flex-col-reverse justify-between border-b-2 border-teal-900 px-6 w-full max-w-screen h-[90%] lg:w-full lg_max-w-screen-xl lg:px-12 lg:flex-row ${project.id % 2 !== 0 && 'lg:flex-row-reverse'}`}>
+        <div className={`flex flex-col-reverse justify-between border-b-2 border-teal-900 px-6 w-full max-w-screen h-[90%] lg:w-[190vh] lg:max-w-screen-xl lg:px-12 lg:flex-row ${project.id % 2 !== 0 && 'lg:flex-row-reverse'}`}>
             <div className="basis-2/3 text-center text-teal-900 align-center justify-center self-center">
                 <h3 className="text-2xl py-2 font-bold lg:text-4xl">{project.name}</h3>
                 <p className="text-lg text-center lg:text-2xl">{project.description}</p>

@@ -5,7 +5,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Contact = () => {
     return (
-        <div className="h-[90vh]">
+        <div className="h-[90vh] pt-4">
             <Header text="Contact Me" />
             <div className="flex justify-center mb-8 font-bold text-lg text-teal-800 divide-x divide-slate-700 pr-4">
                 <p className="pr-2">timurkapusto@gmail.com</p>
