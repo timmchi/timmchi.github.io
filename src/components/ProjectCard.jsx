@@ -1,5 +1,6 @@
 import { Link, useNavigate } from "react-router-dom"
 import Carousel from "./Carousel"
+import TechCard from "./TechCard";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const ProjectCard = ({ project }) => {
@@ -10,15 +11,20 @@ const ProjectCard = ({ project }) => {
             <div className="basis-2/3 text-center text-teal-900 align-center justify-center self-center">
                 <h3 className="text-4xl font-bold pb-6">{project.name}</h3>
                 <p className="text-2xl">{project.description}</p>
-                <a className="flex text-xl justify-center align-center gap-2 pt-2" href={project.link} target="_blank">
-                    Link
-                    <FaExternalLinkAlt className="mt-0.5"/>
-                </a>
-                <a href={project.github} className="flex items-center justify-center align-middle text-xl" target="_blank"> Repository
+                <ul className="flex justify-center gap-2 py-4 ">
+                    {project.technologiesUsed.map(tech => <TechCard key={`${project.id}-${tech}`}techName={tech} />)}
+                </ul>
+                <div className="flex justify-center gap-4 items-center divide-x-2 divide-teal-900">
+                    <a className="flex text-xl justify-center align-center gap-2" href={project.link} target="_blank">
+                        Link
+                        <FaExternalLinkAlt className="mt-0.5"/>
+                    </a>
+                    <a href={project.github} className="flex items-center justify-center align-middle text-xl pl-4" target="_blank"> Repository
 
-                    <FaGithub className="h-8 w-8 pl-2"/>
-                </a>
-                <button className="p-2 mt-10 text-xl font-bold text-white bg-teal-700 hover:bg-teal-900 rounded-full w-64" onClick={() => navigate(`/projects/${project.id}`)}>
+                        <FaGithub className="h-8 w-8 pl-2"/>
+                    </a>
+                </div>
+                <button className="p-2 mt-5 text-xl font-bold text-white bg-teal-700 hover:bg-teal-900 rounded-full w-64" onClick={() => navigate(`/projects/${project.id}`)}>
                     Read more
                 </button>
             </div>
