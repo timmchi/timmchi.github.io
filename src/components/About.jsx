@@ -14,6 +14,7 @@ const About = () => {
                     <p className="w-auto max-w-lg mb-4">I embrace the continuous learning associated with the job of a web developer,
                         so it's only a matter of time before more technologies get added to this list.</p>
                     <p className="w-auto max-w-lg mb-4">I am currently pursuing a Business IT degree at Laurea University of Applied Sciences.</p>
+                    <p className="w-auto max-w-lg mb-4">I also used to study Hospitality Management at Haaga-Helia University of Applied Sciences before discovering my passion for coding.</p>
                 </div>
                 <div className="text-2xl mx-auto px-4">
                     <div>

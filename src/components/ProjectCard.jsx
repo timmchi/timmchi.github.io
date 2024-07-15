@@ -28,7 +28,7 @@ const ProjectCard = ({ project }) => {
                     Read more
                 </button>
             </div>
-            <div className="basis-1/3 rounded-xl flex justify-center align-center border-8 border-slate-100 my-6 p-2 bg-slate-200 shadow-lg lg:my-12 lg:p-8">
+            <div className="basis-1/3 rounded-xl flex justify-center align-center border-8 border-slate-100 my-6 p-2 bg-slate-200 shadow-lg lg:my-8 lg:p-8 lg:pb-16">
                 <Carousel images={project.images} />
             </div>
             
