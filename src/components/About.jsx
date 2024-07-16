@@ -1,8 +1,9 @@
-import { useState } from "react"
-import { books } from "../../data/favoriteBooks";
+// import { useState } from "react"
+// import { books } from "../../data/favoriteBooks";
+// import BookCard from "./BookCard";
+import BookListModal from "./BookListModal";
 
 const About = () => {
-    const [isBookListHidden, setIsBookListHidden] = useState(true);
 
     return (
         <div className='pt-12'>
@@ -19,12 +20,10 @@ const About = () => {
                 <div className="text-2xl mx-auto px-4">
                     <div>
                         <h2 className="font-extrabold text-center text-4xl pt-8 pb-6 tracking-tight leading-none">My hobbies</h2>
-                        <p className="w-auto max-w-lg mb-4">I love reading!
-                        <button className="border bg-teal-700 hover:bg-teal-900 text-white rounded-xl px-4 mx-1.5" onClick={() => setIsBookListHidden(!isBookListHidden)}>See</button>the list of my favorite books.
-                        </p>
-                        <ul className={`${isBookListHidden ? 'hidden' : 'flex'} gap-4 text-lg`}>
-                            {books.map(book => <li key={book.id}>{book.title}</li>)}
-                        </ul>
+                        <div className="flex gap-2">
+                            <p className="w-auto max-w-lg mb-4">I love reading.</p>
+                            <BookListModal buttonText="See"/> <span>the list of my favorite books.</span>
+                        </div>
                         <p className="w-auto max-w-lg mb-4">My current read is <strong>You Don't Know JS Yet - Objects and Classes</strong>.</p>
                     </div>
                     <div>
