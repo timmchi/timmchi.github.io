@@ -1,12 +1,10 @@
-// import { useState } from "react"
-// import { books } from "../../data/favoriteBooks";
-// import BookCard from "./BookCard";
+import { useState } from "react"
 import BookListModal from "./BookListModal";
 
 const About = () => {
 
     return (
-        <div className='pt-12'>
+        <div className={`pt-12`}>
             <div className="flex flex-col justify-center items-center text-teal-900">
                 <div className="text-2xl mx-auto px-4">
                     <h1 className="font-extrabold text-5xl text-center pt-12 pb-6 tracking-tight leading-none">About me</h1>
@@ -20,10 +18,8 @@ const About = () => {
                 <div className="text-2xl mx-auto px-4">
                     <div>
                         <h2 className="font-extrabold text-center text-4xl pt-8 pb-6 tracking-tight leading-none">My hobbies</h2>
-                        <div className="flex gap-2">
                             <p className="w-auto max-w-lg mb-4">I love reading.</p>
-                            <BookListModal buttonText="See"/> <span>the list of my favorite books.</span>
-                        </div>
+                            <div className="flex gap-2"><BookListModal buttonText="See" /> <span>the list of my favorite books.</span></div>
                         <p className="w-auto max-w-lg mb-4">My current read is <strong>You Don't Know JS Yet - Objects and Classes</strong>.</p>
                     </div>
                     <div>
