@@ -4,7 +4,7 @@ import Header from "./Header"
 
 const Projects = () => {
     return (
-        <div className="mt-20">
+        <div className="mt-16">
             <Header text="Projects" />
             <ul role="list" className="flex flex-col items-center justify-center">
                 {projects.map((project) => <li key={project.id}>
