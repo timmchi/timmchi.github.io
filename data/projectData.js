@@ -10,6 +10,7 @@ export const projects = [
         description: 'Search for, like and comment on movies',
         detailedDescription: 'wip',
         technologiesUsed: ['React', 'Node', 'MUI', 'MongoDB', 'TMDB API', 'Playwright'],
+        learningOutcomes: ['a'],
         link: 'https://kinology-movie-app.onrender.com',
         github: 'https://github.com/timmchi/kinology-movie-app'
     }, 
@@ -24,6 +25,7 @@ export const projects = [
         description: 'Radio station and breakfast selection based on location',
         detailedDescription: 'wip',
         technologiesUsed: ['React', 'React Query', 'Google Maps API', 'MUI'],
+        learningOutcomes: ['a'],
         link: 'https://bossanova-breakfast.onrender.com',
         github: 'https://github.com/timmchi/bossanova-breakfast'
     },
@@ -38,6 +40,7 @@ export const projects = [
         description: 'Guess a location based on a google street view',
         detailedDescription: 'wip',
         technologiesUsed: ['React', 'Node', 'Google Maps API', 'Tailwind'],
+        learningOutcomes: ['a'],
         link: 'place guesser link',
         github: 'place guesser repo'
     },
