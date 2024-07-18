@@ -26,7 +26,7 @@ const NavBar = ({ darkModeToggle, isDark }) => {
                     <NavLink to="/" title="Home" activePage={activePage} handleActive={() => setActivePage('Home')} />
                     <NavLink to="/about" title="About me" activePage={activePage} handleActive={() => setActivePage('About me')} />
                     <NavLink to="/projects" title="Projects" activePage={activePage} handleActive={() => setActivePage('Projects')} />
-                    {isDark ? <IoMoon onClick={darkModeToggle} className="text-yellow-500 text-2xl"/> : <IoSunny onClick={darkModeToggle} className="text-yellow-500 text-3xl"/>}
+                    {isDark ? <IoMoon onClick={darkModeToggle} className="ml-2 text-yellow-500 text-2xl md:ml-0"/> : <IoSunny onClick={darkModeToggle} className="ml-2 text-yellow-500 text-3xl md:ml-0"/>}
                 </ul>
             </div>
         </div>
