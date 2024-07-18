@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 import NavLink from "./NavLink"
-import { IoSunnyOutline, IoSunny } from "react-icons/io5";
+import { IoMoon, IoSunny } from "react-icons/io5";
 
 const NavBar = ({ darkModeToggle, isDark }) => {
 
@@ -26,7 +26,7 @@ const NavBar = ({ darkModeToggle, isDark }) => {
                     <NavLink to="/" title="Home" activePage={activePage} handleActive={() => setActivePage('Home')} />
                     <NavLink to="/about" title="About me" activePage={activePage} handleActive={() => setActivePage('About me')} />
                     <NavLink to="/projects" title="Projects" activePage={activePage} handleActive={() => setActivePage('Projects')} />
-                    {isDark ? <IoSunny onClick={darkModeToggle} className="text-yellow-500 text-2xl hover:text-stone-200"/> : <IoSunny onClick={darkModeToggle} className="text-stone-200 text-2xl hover:text-yellow-500"/>}
+                    {isDark ? <IoMoon onClick={darkModeToggle} className="text-yellow-500 text-2xl"/> : <IoSunny onClick={darkModeToggle} className="text-yellow-500 text-3xl"/>}
                 </ul>
             </div>
         </div>
