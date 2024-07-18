@@ -18,14 +18,13 @@ const About = () => {
                 <div className="text-2xl mx-auto px-4">
                     <div>
                         <h2 className="font-extrabold text-center text-4xl pt-6 pb-8 tracking-tight leading-none">My hobbies</h2>
-                            <div className="flex gap-2">
-                                <p className="w-auto max-w-lg mb-4">I love reading.</p>
+
+                                <p className="w-auto max-w-lg mb-4">In my free time, I enjoy reading.</p>
                                 <div className="flex gap-2"><BookListModal buttonText="See" /> <span>the list of my favorite books.</span></div>
-                            </div>
                         <p className="w-auto max-w-lg mb-4">My current read is <a href="https://github.com/getify/You-Dont-Know-JS/tree/2nd-ed/objects-classes" target="_blank"><strong>You Don't Know JS Yet - Objects and Classes</strong>.</a></p>
                     </div>
                     <div>
-                        <p className="w-auto max-w-lg mb-4">I am also passionate about cooking. I am a trained chef and I used to work at restaurant Savoy, which is included in Micheline guide for Helsinki.</p>
+                        <p className="w-auto max-w-lg mb-4">I am also passionate about cooking and eating great food. I am a trained chef and I used to work at restaurant Savoy, which is included in Micheline guide for Helsinki.</p>
                     </div>
                     <div>
                         <p className="w-auto max-w-lg mb-4">My favorite band is The Doors and my favorite artist is Bob Dylan.</p>

@@ -15,8 +15,9 @@ const BookListModal = ({ buttonText }) => {
                 {buttonText}
             </button>
 
-            <div className={`${!isOpen && 'hidden'} fixed backdrop-blur-sm overflow-y-auto overflow-x-hidden fixed inset-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full`} tabIndex="-1">
-                <div onClick={e => e.stopPropagation()} className="relative p-4 top-1/4 left-1/4 w-full max-w-4xl max-h-full">
+            <div className={`${!isOpen && 'hidden'} fixed backdrop-blur-sm overflow-y-auto overflow-x-hidden inset-0 z-50 p-8 justify-center items-center w-full md:p-0 md:inset-0 h-[calc(100%-1rem)] max-h-full`} tabIndex="-1">
+                {/* <div onClick={e => e.stopPropagation()} className="relative p-4 top-1/4 left-1/4 w-full max-w-4xl max-h-full"> */}
+                <div onClick={e => e.stopPropagation()} className="relative bg-teal-900 bg-opacity-95 rounded-lg top-[15%] shadow-lg max-w-full max-h-full w-full md:w-11/12 lg:w-1/2 md:top-1/4 md:left-1/4">
                     <div className="relative bg-teal-900 bg-opacity-95 rounded-lg shadow-lg">
                         <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-slate-400">
                             <h3 className="text-xl font-semibold text-white">Favorite Books</h3>
@@ -27,8 +28,8 @@ const BookListModal = ({ buttonText }) => {
                                 <span className="sr-only">Close modal</span>
                             </button>
                         </div>
-                        <div className="p-4 md:p-5 space-y-4">
-                            <div className="flex gap-8 text-lg text-white">
+                        <div className="p-16 space-y-4 md:p-4">
+                            <div className="flex flex-col gap-4 text-lg text-white md:flex-row md:gap-8">
                                 {books.map(book => <BookCard key={book.id} book={book} />)}
                             </div>
                         </div>
