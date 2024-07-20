@@ -28,7 +28,7 @@ const ProjectPage = () => {
                 <div>
                     <h2 className='text-3xl font-bold'>What I learned</h2>
                     <ul>
-                        {project.learningOutcomes.map(outcome => <p>{outcome}</p>)}
+                        {project.learningOutcomes.map(outcome => <p key={`${project.id}-${outcome}`}>{outcome}</p>)}
                     </ul>
                 </div>
             </div>
