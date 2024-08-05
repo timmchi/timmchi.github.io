@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { projects } from "../../data/projectData";
-import Carousel from "./Carousel";
+import LargeCarousel from "./LargeCarousel";
 import TechCard from "./TechCard";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
@@ -10,11 +10,11 @@ const ProjectPage = () => {
 
   console.log(project);
   return (
-    <div className="flex flex-col mt-16 bg-stone-200 dark:bg-teal-900 h-screen text-teal-900 dark:text-stone-200 lg:flex-row">
+    <div className="flex flex-col h-full mt-16 bg-stone-200 dark:bg-teal-900 text-teal-900 dark:text-stone-200 lg:flex-row">
       <div className="basis-1/2">
-        <Carousel images={project.images} size="large" />
+        <LargeCarousel images={project.images} />
       </div>
-      <div className="basis-1/2 justify-center mt-8 max-w-[40%]">
+      <div className="basis-1/2 p-8 lg:mt-8 lg:max-w-[40%]">
         <div className="flex gap-6">
           <h1 className="text-5xl font-bold">{project.name}</h1>
           <div className="flex pt-2 text-md justify-center gap-4 items-center divide-x-2 divide-teal-900 lg:text-xl dark:divide-stone-200">

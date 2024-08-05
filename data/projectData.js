@@ -1,18 +1,32 @@
+import kinology1 from "../screenshots/kinology/1-min.jpg";
+import kinology2 from "../screenshots/kinology/2-min.jpg";
+import kinology3 from "../screenshots/kinology/3-min.jpg";
+import kinology4 from "../screenshots/kinology/4-min.jpg";
+import kinology5 from "../screenshots/kinology/5-min.jpg";
+
 export const projects = [
   {
     id: 1,
     name: "Kinology",
     images: [
       {
-        url: "https://storage.googleapis.com/petbacker/images/blog/2021/orange-cat-slept-whole-day-gone-viral/fat-cat-sleeping-every-time-4.jpg",
+        url: kinology2,
         projectName: "Kinology",
       },
       {
-        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx-j7TRghl9jpykKcP7QHZPz8dl0dk_Um49w&s",
+        url: kinology1,
         projectName: "Kinology",
       },
       {
-        url: "https://pbs.twimg.com/profile_images/1534365794074755073/ClZmdMG8_400x400.jpg",
+        url: kinology3,
+        projectName: "Kinology",
+      },
+      {
+        url: kinology4,
+        projectName: "Kinology",
+      },
+      {
+        url: kinology5,
         projectName: "Kinology",
       },
     ],

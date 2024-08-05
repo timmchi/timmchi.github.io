@@ -2,7 +2,7 @@ import { useState } from "react";
 import { GrNext, GrPrevious } from "react-icons/gr";
 import { FaCircle } from "react-icons/fa";
 
-const LargeCarousel = ({ images }) => {
+const Carousel = ({ images, size }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const handleNextClick = () => {
@@ -20,24 +20,24 @@ const LargeCarousel = ({ images }) => {
   const handleGoToIndex = (index) => setCurrentImageIndex(index);
 
   return (
-    <div className="h-[350px] w-[350px] mx-auto py-6 px-3 relative group lg:h-[420px] lg:w-[420px]">
+    <div className="h-[350px] w-[350px] mx-auto py-6 px-3 relative group lg:h-[700px] lg:w-[700px] lg:mt-24">
       <div
         style={{ backgroundImage: `url(${images[currentImageIndex].url})` }}
-        className="h-[290px] w-full rounded-2xl bg-center bg-cover duration-500 lg:h-[400px] lg:w-[400px]"
+        className="h-[290px] w-full rounded-2xl bg-center bg-cover duration-500 lg:h-[600px] lg:w-[600px]"
       ></div>
       <button
-        className="hidden group-hover:block absolute top-[45%] -translate-x-0 -translate-y-[-50%] left-4 p-3 text-xs bg-white bg-opacity-40 hover:bg-opacity-60 rounded-full lg:text-lg lg:p-4 lg:top-[40%]"
+        className="hidden group-hover:block absolute top-[45%] -translate-x-0 -translate-y-[-50%] left-4 p-3 text-xs bg-white bg-opacity-40 hover:bg-opacity-60 rounded-full lg:text-lg lg:p-4 lg:top-[40%] lg:left-5"
         onClick={handlePrevClick}
       >
         <GrPrevious />
       </button>
       <button
-        className="hidden group-hover:block absolute top-[45%] -translate-x-0 -translate-y-[-50%] right-5 p-3 text-xs bg-white bg-opacity-40 hover:bg-opacity-60 rounded-full lg:text-lg lg:p-4 lg:top-[40%] lg:right-3"
+        className="hidden group-hover:block absolute top-[45%] -translate-x-0 -translate-y-[-50%] right-5 p-3 text-xs bg-white bg-opacity-40 hover:bg-opacity-60 rounded-full lg:text-lg lg:p-4 lg:top-[40%] lg:right-24"
         onClick={handleNextClick}
       >
         <GrNext />
       </button>
-      <div className="hidden group-hover:flex top-4 justify-center py-2">
+      <div className="hidden group-hover:flex top-4 justify-center py-2 lg:pr-20">
         {images.map((image, index) => (
           <button
             key={`${image.url}${image.projectName}`}
@@ -56,4 +56,4 @@ const LargeCarousel = ({ images }) => {
   );
 };
 
-export default LargeCarousel;
+export default Carousel;
