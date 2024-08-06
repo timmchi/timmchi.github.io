@@ -1,9 +1,21 @@
+import { useInView } from "react-intersection-observer";
 import { FaGithub, FaArrowRight } from "react-icons/fa";
 
 const Hero = ({ handleContactMe }) => {
+  const { ref, inView } = useInView();
+
   return (
     <section className="md:h-screen md:pt-36">
-      <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+      <div
+        style={{
+          opacity: inView ? 1 : 0,
+          transition: "all 1s",
+          filter: inView ? "blur(0)" : "blur(5px)",
+          transform: inView ? "translateY(0)" : "translateY(10%)",
+        }}
+        ref={ref}
+        className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12"
+      >
         <div className="mr-auto place-self-center lg:col-span-7 mt-12 md:mt-0 text-teal-900 dark:text-stone-200">
           <h1 className="max-w-2xl ml-12 mb-4 pb-6 font-extrabold tracking-tight leading-none text-4xl md:ml-0 md:text-5xl xl:text-6xl">
             Hello, my name is Timur.

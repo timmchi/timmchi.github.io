@@ -1,24 +1,24 @@
-import { useRef } from "react"
-import Hero from "./Hero"
-import Skills from "./Skills"
-import ProjectsList from "./ProjectsList"
-import Contact from "./Contact"
+import { useRef } from "react";
+import Hero from "./Hero";
+import Skills from "./Skills";
+import ProjectsList from "./ProjectsList";
+import Contact from "./Contact";
 
 const MainPage = () => {
-    const contactRef = useRef(null)
+  const contactRef = useRef(null);
 
-    const scrollToContactMe = () => contactRef.current.scrollIntoView()
+  const scrollToContactMe = () => contactRef.current.scrollIntoView();
 
-    return (
-        <div className="py-10">
-            <Hero handleContactMe={scrollToContactMe} />
-            <Skills />
-            <ProjectsList />
-            <div ref={contactRef}>
-                <Contact />
-            </div>
-        </div>
-    )
-}
+  return (
+    <div className="py-10">
+      <Hero handleContactMe={scrollToContactMe} />
+      <Skills />
+      <ProjectsList />
+      <div ref={contactRef}>
+        <Contact />
+      </div>
+    </div>
+  );
+};
 
-export default MainPage
+export default MainPage;
