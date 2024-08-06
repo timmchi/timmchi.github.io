@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import { useEffect } from "react";
 import { projects } from "../../data/projectData";
 import LargeCarousel from "./LargeCarousel";
 import TechCard from "./TechCard";
@@ -8,9 +9,13 @@ const ProjectPage = () => {
   const { projectId } = useParams();
   const project = projects.find((p) => p.id === Number(projectId));
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   console.log(project);
   return (
-    <div className="flex flex-col h-full mt-16 bg-stone-200 dark:bg-teal-900 text-teal-900 dark:text-stone-200 lg:flex-row">
+    <div className="flex flex-col h-full mt-16 bg-stone-200 dark:bg-teal-900 text-teal-900 dark:text-stone-200 md:h-screen lg:flex-row">
       <div className="basis-1/2">
         <LargeCarousel images={project.images} />
       </div>
