@@ -1,4 +1,4 @@
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaArrowRight } from "react-icons/fa";
 
 const Hero = ({ handleContactMe }) => {
   return (
@@ -15,18 +15,7 @@ const Hero = ({ handleContactMe }) => {
               className="inline-flex items-center justify-center px-5 py-3 font-medium text-center text-white bg-teal-700 dark:bg-stone-200 dark:text-teal-900 hover:bg-teal-900 dark:hover:bg-teal-600 dark:hover:text-stone-200 rounded-full"
             >
               Contact Me
-              <svg
-                className="ml-2 -mr-1 w-5 h-5"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
+              <FaArrowRight className="ml-1.5 -mr-1 w-4 h-4" />
             </button>
             <button className="inline-flex items-center justify-center px-5 py-3 border border-teal-900 font-medium text-center text-teal-900 hover:bg-white dark:border-stone-200 dark:text-stone-200 dark:hover:bg-teal-600 bg-transparent hover:bg-white rounded-full">
               <a

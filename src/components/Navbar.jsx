@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import NavLink from "./NavLink";
 import { IoMoon, IoSunny } from "react-icons/io5";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const NavBar = ({ darkModeToggle, isDark }) => {
   const [open, setOpen] = useState(false);
@@ -28,25 +29,9 @@ const NavBar = ({ darkModeToggle, isDark }) => {
           onClick={() => setOpen(!open)}
           type="button"
           className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-slate-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-stone-200 dark:hover:bg-teal-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-sticky"
-          aria-expanded={open}
         >
           <span className="sr-only">Open main menu</span>
-          <svg
-            className="w-5 h-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
-          >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M1 1h15M1 7h15M1 13h15"
-            />
-          </svg>
+          <GiHamburgerMenu className="w-12 h-12" />
         </button>
         <div
           className={`${open ? "block" : "hidden"} w-full md:block md:w-auto`}
