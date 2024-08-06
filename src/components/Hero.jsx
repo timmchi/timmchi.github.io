@@ -2,7 +2,10 @@ import { useInView } from "react-intersection-observer";
 import { FaGithub, FaArrowRight } from "react-icons/fa";
 
 const Hero = ({ handleContactMe }) => {
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView({
+    threshold: 0,
+    triggerOnce: true,
+  });
 
   return (
     <section className="md:h-screen md:pt-36">

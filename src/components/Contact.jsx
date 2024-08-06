@@ -4,7 +4,10 @@ import Header from "./Header";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Contact = () => {
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView({
+    threshold: 0,
+    triggerOnce: true,
+  });
 
   return (
     <div

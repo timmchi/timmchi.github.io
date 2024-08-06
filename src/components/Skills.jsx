@@ -4,7 +4,10 @@ import SkillCard from "./SkillCard";
 import Header from "./Header";
 
 const Skills = () => {
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView({
+    threshold: 0,
+    triggerOnce: true,
+  });
 
   return (
     <div

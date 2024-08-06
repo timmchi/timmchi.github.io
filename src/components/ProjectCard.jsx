@@ -1,13 +1,25 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { useInView } from "react-intersection-observer";
 import Carousel from "./Carousel";
 import TechCard from "./TechCard";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const ProjectCard = ({ project }) => {
   const navigate = useNavigate();
+  const { ref, inView } = useInView({
+    threshold: 0,
+    triggerOnce: true,
+  });
 
   return (
     <div
+      ref={ref}
+      style={{
+        opacity: inView ? 1 : 0,
+        transition: "all 1s",
+        filter: inView ? "blur(0)" : "blur(5px)",
+        transform: inView ? "translateY(0)" : "translateY(10%)",
+      }}
       className={`flex flex-col-reverse justify-between border-b-2 border-teal-900 dark:border-stone-200 px-6 w-full max-w-screen h-[90%] lg:w-[190vh] lg:max-w-screen-xl lg:px-12 lg:flex-row ${
         project.id % 2 !== 0 && "lg:flex-row-reverse"
       }`}

@@ -4,7 +4,10 @@ import ProjectCard from "./ProjectCard";
 import Header from "./Header";
 
 const ProjectsList = () => {
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView({
+    threshold: 0,
+    triggerOnce: true,
+  });
 
   return (
     <div
