@@ -26,7 +26,7 @@ const BookListModal = ({ buttonText }) => {
       >
         <div
           onClick={(e) => e.stopPropagation()}
-          className="relative bg-teal-900 bg-opacity-95 rounded-lg top-[15%] shadow-lg max-w-full max-h-full w-full md:w-11/12 lg:w-1/2 md:top-1/4 md:left-1/4 dark:border-2 dark:border-stone-200"
+          className="relative bg-teal-900 bg-opacity-95 rounded-lg top-[15%] shadow-lg max-w-full max-h-full w-full md:w-11/12 lg:w-1/2 md:top-1/4 md:left-1/4 lg:max-w-7xl dark:border-2 dark:border-stone-200"
         >
           <div className="relative bg-teal-900 bg-opacity-95 rounded-lg shadow-lg">
             <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-slate-400">
