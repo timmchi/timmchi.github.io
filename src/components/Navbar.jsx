@@ -63,7 +63,7 @@ const NavBar = ({ darkModeToggle, isDark }) => {
             ) : (
               <IoSunny
                 onClick={darkModeToggle}
-                className="ml-2 text-yellow-500 text-3xl md:ml-0 hover:cursor-pointer"
+                className="ml-2 text-yellow-500 text-2xl md:ml-0 hover:cursor-pointer"
               />
             )}
           </ul>
