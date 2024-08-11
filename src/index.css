@@ -6,5 +6,10 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 @tailwind components;
 @tailwind utilities;

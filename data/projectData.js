@@ -4,6 +4,11 @@ import kinology3 from "../screenshots/kinology/3-min.jpg";
 import kinology4 from "../screenshots/kinology/4-min.jpg";
 import kinology5 from "../screenshots/kinology/5-min.jpg";
 
+import bossanova1 from "../screenshots/bossanova/1.jpg";
+import bossanova2 from "../screenshots/bossanova/2.jpg";
+import bossanova3 from "../screenshots/bossanova/3.jpg";
+import bossanova4 from "../screenshots/bossanova/4.jpg";
+
 export const projects = [
   {
     id: 1,
@@ -58,23 +63,31 @@ export const projects = [
   },
   {
     id: 2,
-    name: "Bossanova Breakfast WIP",
+    name: "Bossanova Breakfast",
     images: [
       {
-        url: "https://storage.googleapis.com/petbacker/images/blog/2021/orange-cat-slept-whole-day-gone-viral/fat-cat-sleeping-every-time-4.jpg",
+        url: bossanova1,
         projectName: "Bossanova",
       },
       {
-        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx-j7TRghl9jpykKcP7QHZPz8dl0dk_Um49w&s",
+        url: bossanova2,
         projectName: "Bossanova",
       },
       {
-        url: "https://pbs.twimg.com/profile_images/1534365794074755073/ClZmdMG8_400x400.jpg",
+        url: bossanova3,
+        projectName: "Bossanova",
+      },
+      {
+        url: bossanova4,
         projectName: "Bossanova",
       },
     ],
     description: "Radio station and breakfast selection based on location",
-    detailedDescription: ["Coming soon :)"],
+    detailedDescription: [
+      "Bossanova Breakfast allows users to select a bossanova radio station, and then choose out of the highest rated breakfast restaurants/cafes in the city of their choosing while listening to chill tunes.",
+      "It utilizes Google Maps API and Radio Browser API for core functionality.",
+      "It is currently a work in progress, which is why it is not deployed yet, however, the project is nearing its completion. The main functionality is working, though, and the code is available in the github repository.",
+    ],
     technologiesUsed: ["React", "React Query", "Google Maps API", "MUI"],
     learningOutcomes: [
       "Practiced using Google Maps API with React",
@@ -82,7 +95,7 @@ export const projects = [
       "Gained experience in using Google Cloud Services",
       "Practiced React Query in a real project",
     ],
-    link: "https://bossanova-breakfast.onrender.com",
+    link: "https://github.com/timmchi/bossanova-breakfast",
     github: "https://github.com/timmchi/bossanova-breakfast",
   },
   {
@@ -103,10 +116,19 @@ export const projects = [
       },
     ],
     description: "Guess a location based on a google street view",
-    detailedDescription: ["Coming soon :)"],
-    technologiesUsed: ["React", "Node", "Google Maps API", "Tailwind"],
+    detailedDescription: [
+      "Coming soon :)",
+      "Github repository and deployed version are not yet available",
+    ],
+    technologiesUsed: [
+      "React",
+      "Node",
+      "Google Maps API",
+      "Tailwind",
+      "Sockets.io",
+    ],
     learningOutcomes: ["Coming soon :)"],
-    link: "place guesser link",
-    github: "place guesser repo",
+    link: "timmchi.github.io",
+    github: "https://github.com/timmchi/",
   },
 ];
