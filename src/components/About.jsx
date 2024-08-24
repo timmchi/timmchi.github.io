@@ -52,7 +52,7 @@ const About = () => {
                 href="https://github.com/getify/You-Dont-Know-JS/tree/2nd-ed/objects-classes"
                 target="_blank"
               >
-                <strong>You Don't Know JS Yet - Objects and Classes</strong>.
+                <strong>You Don't Know JS Yet - Scope & Closures</strong>.
               </a>
             </p>
           </div>
