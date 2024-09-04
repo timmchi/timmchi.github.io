@@ -126,6 +126,7 @@ export const projects = [
       "Google Maps API",
       "Tailwind",
       "Sockets.io",
+      "Redux Toolkit",
     ],
     learningOutcomes: ["Coming soon :)"],
     link: "timmchi.github.io",
