@@ -9,6 +9,14 @@ import bossanova2 from "../screenshots/bossanova/2.jpg";
 import bossanova3 from "../screenshots/bossanova/3.jpg";
 import bossanova4 from "../screenshots/bossanova/4.jpg";
 
+import guessr1 from "../screenshots/guessr/first.png";
+import guessr2 from "../screenshots/guessr/second.png";
+import guessr3 from "../screenshots/guessr/third.png";
+import guessr4 from "../screenshots/guessr/fourth.png";
+import guessr5 from "../screenshots/guessr/fifth.png";
+import guessr6 from "../screenshots/guessr/sixth.png";
+import guessr7 from "../screenshots/guessr/seventh.png";
+
 export const projects = [
   {
     id: 1,
@@ -103,17 +111,41 @@ export const projects = [
     name: "Place Guesser WIP",
     images: [
       {
-        url: "https://storage.googleapis.com/petbacker/images/blog/2021/orange-cat-slept-whole-day-gone-viral/fat-cat-sleeping-every-time-4.jpg",
+        url: guessr1,
         projectName: "Guessr",
       },
       {
-        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx-j7TRghl9jpykKcP7QHZPz8dl0dk_Um49w&s",
+        url: guessr2,
         projectName: "Guessr",
       },
       {
-        url: "https://pbs.twimg.com/profile_images/1534365794074755073/ClZmdMG8_400x400.jpg",
+        url: guessr3,
         projectName: "Guessr",
       },
+      {
+        url: guessr4,
+        projectName: "Guessr",
+      },
+      {
+        url: guessr5,
+        projectName: "Guessr",
+      },
+      {
+        url: guessr6,
+        projectName: "Guessr",
+      },
+      {
+        url: guessr7,
+        projectName: "Guessr",
+      },
+      //   {
+      //     url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx-j7TRghl9jpykKcP7QHZPz8dl0dk_Um49w&s",
+      //     projectName: "Guessr",
+      //   },
+      //   {
+      //     url: "https://pbs.twimg.com/profile_images/1534365794074755073/ClZmdMG8_400x400.jpg",
+      //     projectName: "Guessr",
+      //   },
     ],
     description: "Guess a location based on a google street view",
     detailedDescription: [
