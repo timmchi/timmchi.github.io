@@ -150,7 +150,9 @@ export const projects = [
     description: "Guess a location based on a google street view",
     detailedDescription: [
       "Coming soon :)",
-      "Github repository and deployed version are not yet available",
+      "Github repository is not yet available",
+      "There is a deployed demo available in which you can play single player mode!",
+      "In order to access the website, use the password 'panda228'",
     ],
     technologiesUsed: [
       "React",
@@ -161,7 +163,7 @@ export const projects = [
       "Redux Toolkit",
     ],
     learningOutcomes: ["Coming soon :)"],
-    link: "timmchi.github.io",
+    link: "https://backend-placeguessr-4654.fly.dev/",
     github: "https://github.com/timmchi/",
   },
 ];
