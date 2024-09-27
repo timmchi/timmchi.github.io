@@ -151,8 +151,7 @@ export const projects = [
     detailedDescription: [
       "Coming soon :)",
       "Github repository is not yet available",
-      "There is a deployed demo available in which you can play single player mode!",
-      "In order to access the website, use the password 'panda228'",
+      "There is a deployed demo available in which you can play either the single player mode or duel another player!",
     ],
     technologiesUsed: [
       "React",
@@ -162,7 +161,13 @@ export const projects = [
       "Sockets.io",
       "Redux Toolkit",
     ],
-    learningOutcomes: ["Coming soon :)"],
+    learningOutcomes: [
+      "Implemented real-time game logic from scratch using socket.io",
+      "Practiced complex state management with Redux",
+      "Tried my best to utilize 'You might not need an effect'",
+      "Gained more exposure to Google Maps API",
+      "Gained a better understanding of React Google Maps library",
+    ],
     link: "https://backend-placeguessr-4654.fly.dev/",
     github: "https://github.com/timmchi/",
   },
