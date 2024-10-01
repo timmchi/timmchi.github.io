@@ -152,7 +152,6 @@ export const projects = [
       "Coming soon :)",
       "Github repository is not yet available",
       "There is a deployed demo available in which you can play either the single player mode or duel another player!",
-      "Currently, if you want to duel another player, both players need to have the website open at the time of room creation",
     ],
     technologiesUsed: [
       "React",
