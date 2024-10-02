@@ -34,7 +34,7 @@ const Hero = ({ handleContactMe }) => {
             </button>
             <button className="inline-flex items-center justify-center px-5 py-3 border border-teal-900 font-medium text-center text-teal-900 hover:bg-white dark:border-stone-200 dark:text-stone-200 dark:hover:bg-teal-600 bg-transparent hover:bg-white rounded-full">
               <a
-                href="https://drive.google.com/file/d/1vAJvotuDKGEgAi6Dws-kBiZdAOaT2Mxh/view?usp=sharing"
+                href="https://drive.google.com/file/d/16U1fQDb5wu6gh2VbjthIRSkL50Ki30ww/view?usp=sharing"
                 target="_blank"
               >
                 Open my CV

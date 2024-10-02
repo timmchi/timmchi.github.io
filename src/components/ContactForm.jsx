@@ -2,6 +2,10 @@ import { useEffect } from "react";
 import { object, string, minLength, email, pipe } from "valibot";
 import { useForm } from "react-hook-form";
 import { valibotResolver } from "@hookform/resolvers/valibot";
+import ReCAPTCHA from "react-google-recaptcha";
+import { useState } from "react";
+
+const CAPTCHA_KEY = "6LclcVUqAAAAAEarngKm93FyrcvdtHkD6IiRELR1";
 
 const ContactFormSchema = object({
   email: pipe(
@@ -28,6 +32,7 @@ const ContactForm = () => {
     reset,
     formState: { isSubmitting, isSubmitSuccessful },
   } = useForm({ resolver: valibotResolver(ContactFormSchema) });
+  const [captchaValue, setCaptchaValue] = useState(null);
 
   useEffect(() => {
     if (isSubmitSuccessful) {
@@ -40,16 +45,18 @@ const ContactForm = () => {
   }, [isSubmitSuccessful, reset]);
 
   const sendEmail = async (data) => {
-    // e.preventDefault();
-    const { email, topic, message } = data;
+    if (captchaValue) {
+      const { email, topic, message } = data;
 
-    await fetch("https://fabform.io/f/JVaQdrr", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ email, topic, message }),
-    });
+      await fetch("https://fabform.io/f/JVaQdrr", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email, topic, message }),
+      });
+    }
+    setCaptchaValue(null);
   };
 
   return (
@@ -66,10 +73,8 @@ const ContactForm = () => {
             className="border text-sm rounded-lg block w-full p-2.5 bg-teal-700 border-teal-900 placeholder-white text-stone-200 focus:ring-blue-500 focus:border-blue-500"
             type="email"
             id="email"
-            // value={email}
             defaultValue="email@example.com"
             {...register("email")}
-            // onChange={(e) => setEmail(e.target.value)}
             placeholder="name@example.com"
           />
         </div>
@@ -83,8 +88,6 @@ const ContactForm = () => {
           <input
             className="border text-sm rounded-lg block w-full p-2.5 bg-teal-700 border-teal-900 placeholder-white text-stone-200 focus:ring-blue-500 focus:border-blue-500"
             id="topic"
-            // value={topic}
-            // onChange={(e) => setTopic(e.target.value)}
             {...register("topic")}
             defaultValue="topic"
             placeholder="e.g. Collaboration"
@@ -101,16 +104,20 @@ const ContactForm = () => {
             id="message"
             className="border text-sm rounded-lg block w-full p-2.5 bg-teal-700 border-teal-900 placeholder-white text-stone-200 focus:ring-blue-500 focus:border-blue-500"
             rows="4"
-            // value={message}
-            // onChange={(e) => setMessage(e.target.value)}
             {...register("message")}
             defaultValue="message"
             placeholder="Your message"
           />
         </div>
+        <ReCAPTCHA
+          sitekey={CAPTCHA_KEY}
+          onChange={(value) => setCaptchaValue(value)}
+          className="pb-4"
+        />
         <button
           className="w-full py-2 border border-gray-600 rounded-lg text-white font-bold bg-teal-600 hover:bg-teal-900 dark:hover:bg-teal-700 "
           type="submit"
+          disabled={isSubmitting}
         >
           Submit
         </button>
